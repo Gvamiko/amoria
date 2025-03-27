@@ -15,24 +15,24 @@ body {
     margin: 0;
 }
 .navbar {
-    background-color: #d4c2b6;
     margin: 0;
     padding: 0 !important;
 }
 .brand{
-    height: 130px;
+    height: 80px;
 }
 .nav-link {
     font-size: 20px;
     font-weight: 400;
+    color: #fff !important;
 }
 .nav-link:hover {
-    font-weight: 600;
+    font-weight: 800;
 }
 .carousel-item {
     height: 450px !important;
     width: 100% !important;
-    margin-top: 100px; 
+    margin-top: 50px !important; 
 }
 .carousel-item1 {
     background-image: url(./img/Coffee+Beans.jpg);
@@ -40,6 +40,8 @@ body {
     height: 450px !important;
     width: 100% !important;
     margin-top: 100px;   
+    background-position: center;
+    filter: brightness(90%);
 }
 .carousel-item2 {
     background-image: url(./img/salt_ribbons_in_the_dead_sea.jpg);
@@ -47,6 +49,8 @@ body {
     height: 450px !important;
     width: 100% !important;
     margin-top: 100px;   
+    background-position: center;
+    filter: brightness(90%);
 }
 .carousel-item3 {
     background-image: url(./img/homemade-light-brown-sugar.jpg);
@@ -54,6 +58,8 @@ body {
     height: 450px !important;
     width: 100% !important;
     margin-top: 100px;   
+    background-position: center;
+    filter: brightness(90%);
 }
 .card {
     background: none !important;
@@ -62,7 +68,7 @@ body {
     backdrop-filter: blur(3px) !important;
 }
 .card_position{
-    margin-top: 100px !important;
+    margin-top: 80px !important;
 }
 .card_header {
     font-size: 35px !important;
