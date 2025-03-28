@@ -15,8 +15,14 @@
 }
 body {
     font-family: 'FiraGO', sans-serif !important;
-    background-color: #5d60621c !important; 
+    /* background-color: #5d60621c !important;  */
     margin: 0;
+    background-color: #f5f5f5; /* ძირითადი ფერი */
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px; /* ბადის ზომა */
+    background-attachment: fixed;
 }
 .navbar {
     margin: 0;
@@ -85,8 +91,12 @@ body {
     text-align: center;
 }
 .brand_color {
- background-color: #212529;   
- border-radius: 4px;
+    background-color: #212529;   
+    border-radius: 4px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px; /* ბადის ზომა */
 }
 .brand_slogan > h3 {
     color: #fff;
