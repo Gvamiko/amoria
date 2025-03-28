@@ -21,12 +21,23 @@ body {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-    background-size: 30px 30px; /* ბადის ზომა */
+    background-size: 15px 15px; /* ბადის ზომა */
     background-attachment: fixed;
 }
 .navbar {
     margin: 0;
     padding: 0 !important;
+    background-color: #212529;   
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px; /* ბადის ზომა */
+    background-attachment: fixed;
+    position: fixed !important;
+    top: 0; /* გვერდის ზედა ნაწილში განთავსება */
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 .brand{
     height: 80px;
@@ -91,12 +102,14 @@ body {
     text-align: center;
 }
 .brand_color {
-    background-color: #212529;   
+    margin-top: 94px !important;
     border-radius: 4px;
+    background-color: #212529;   
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 16px 16px; /* ბადის ზომა */
+    background-attachment: fixed;
 }
 .brand_slogan > h3 {
     color: #fff;
@@ -109,9 +122,21 @@ body {
     font-family: medea;
 }
 .card_info {
-    background-color: #212529;
+    background-color: #212529;   
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px; /* ბადის ზომა */
+    background-attachment: fixed;
 }
-
+footer {
+    background-color: #212529 !important;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px; /* ბადის ზომა */
+    background-attachment: fixed;
+}
 
 
 
