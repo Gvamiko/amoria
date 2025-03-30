@@ -175,4 +175,10 @@ footer {
     .carousel-item  {
         margin-top: 1px !important;
     }
+    .info_card {
+        margin-top: -50px !important;
+    }
+    .brand_mobile {
+        margin-top: 110px !important;
+    }
 }
