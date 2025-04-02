@@ -53,7 +53,21 @@ body {
 .carousel-item {
     height: 100% !important;
     width: 100% !important;
-    
+    padding: 50px 20px;
+}
+.carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33 37 41 / 68%);
+    z-index: 5;
+}
+.z_index {
+    z-index: 6;
+    position: relative;
 }
 .carousel-item1 {
     background-image: url(./img/coffe.webp);
@@ -62,7 +76,7 @@ body {
     width: 100% !important;
     /* margin-top: 100px;    */
     background-position: center;
-    filter: brightness(90%);
+    
 }
 .carousel-item2 {
     background-image: url(./img/salt.webp);
@@ -71,7 +85,7 @@ body {
     width: 100% !important;
     /* margin-top: 100px;    */
     background-position: center;
-    filter: brightness(90%);
+    
 }
 .carousel-item3 {
     background-image: url(./img/shugar.webp);
@@ -80,25 +94,25 @@ body {
     width: 100% !important;
     /* margin-top: 100px;    */
     background-position: center;
-    filter: brightness(90%);
+    
 }
 .card_position {
     background: none !important;
     border: none !important;
     width: 100% !important;
-    backdrop-filter: blur(8px) !important;
 }
 
 .card_header {
     font-size: 35px !important;
-    color: #fff !important;
-    text-shadow: rgba(255, 204, 0, 0.753) 1px 0 8px;
+    color: #fff;
+    
+    
     text-align: center;
 }
 .card_p {
     font-size: 20px;
-    color: #fff !important;
-    text-shadow: rgba(255, 204, 0, 0.753) 1px 0 8px;
+    color: #fff;
+    
     text-align: center;
 }
 .brand_color {
@@ -144,9 +158,59 @@ footer {
     background-size: 16px 16px; /* ბადის ზომა */
     background-attachment: fixed;
 }
+.bg-custom {
+    background-color: #212529 !important;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px; /* ბადის ზომა */
+    background-attachment: fixed;
+    /* height: 700px; */
+}
 
 
-
+.card_hover {
+    /* overflow: hidden; */
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+.card_hover:hover {
+    transform: scale(1.05);
+}
+.card_body {
+    transition: all 0.3s;
+    position: absolute;
+    background-color: #fff;
+    top: calc(100% - 15px);
+    visibility: hidden; 
+    opacity: 0;
+    border-radius: 0 0 3px 3px; 
+    
+}
+.card_hover:hover .card_body {
+     padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% - 3px);
+}
+.card_hover:hover .scroll_icon {
+    bottom: 80px;
+    visibility: hidden;
+    opacity: 0;
+    /* margin: 0 !important; */
+}
+.scroll_icon {
+    position: absolute;
+    left:  calc(50% - 20px);
+    bottom: 45px;
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 5px;
+    transition: all .3s;
+    visibility: visible;
+    opacity: .8;
+    width: 40px;
+}
 
 @media screen and (max-width: 768px) {
     .brand_color {
