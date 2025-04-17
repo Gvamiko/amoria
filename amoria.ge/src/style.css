@@ -211,6 +211,14 @@ footer {
     opacity: .8;
     width: 40px;
 }
+.mobile_img {
+    width: 60px;
+    margin:10px 10px ;
+}
+.mobile_text {
+    margin: 0;
+    font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
     .brand_color {
